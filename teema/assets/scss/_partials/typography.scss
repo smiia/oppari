@@ -1,0 +1,82 @@
+body {
+font-size: $theme-text-size;
+font-family: $base-f;
+font-weight: $base-w;
+line-height: 1.4;
+}
+
+@media (max-width: 560px) {
+  p, a, b, ul, li, ol {
+    font-size: $theme-text-size - 2px !important;
+  }
+}
+
+p.has-text-align-center {
+	text-align: center !important;
+  justify-self: center;
+  align-self: center;
+}
+
+
+.cardb {
+	letter-spacing: 1px;
+}
+
+.site-info {
+  h3 {
+    color: $main;
+    font-family: $base-fh;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #c35392, 0 0 20px #c35392, 0 0 25px #c35392, 0 0 30px #c35392, 0 0 35px #c35392;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #a84b7f, 0 0 20px #a84b7f, 0 0 25px #a84b7f, 0 0 30px #a84b7f, 0 0 35px #a84b7f, 0 0 40px #a84b7f;
+  }
+}
+
+strong, b {
+  font-weight: 800;
+}
+.textwrap p {
+  font-size: $theme-text-size - 2px;
+}
+p {
+  padding-bottom: $font-sm - 2;
+  color: $color-ctext;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6, hr {
+  font-weight: 400;
+}
+.dashicon, .dashicons {
+  color: $link-b;
+}
+h1, h2 {
+  font-family: $base-fh;
+  text-shadow: 2px 3px 1px $secondary;
+  margin-bottom: 0px;
+}
+
+h1 {font-size: 3.5 * $theme-text-size; font-family: "Space Mono", sans-serif;}
+h2 {font-size: 3 * $theme-text-size; font-family: "Space Mono", sans-serif;}
+h3 {font-size: 1.9 * $theme-text-size; font-family: "Space Mono", sans-serif; }
+h4 {font-size: 1.5 * $theme-text-size;}
+h5 {font-size: 1.1 * $theme-text-size;}
+h6 {font-size: $theme-text-size;}
+
+
+h1,h2,h3,h4,h5,h6 {
+  color: $headingsmix;
+}
