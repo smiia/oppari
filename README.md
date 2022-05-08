@@ -2,4 +2,4 @@
 _s theme for UAS final project + Gutenberg modules 
 
 Mukana mukautetut teeman tiedostot sekä moduulit. 
-Lisätietoa https://developer.wordpress.org/block-editor/
+Lisätietoa https://developer.wordpress.org/block-editor/ & https://underscores.me 
