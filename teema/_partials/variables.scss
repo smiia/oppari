@@ -1,0 +1,51 @@
+/* Värit */
+$main: #328787 !default;
+$bg: #1a3334 !default;
+$headers: #fff !default;
+$header: #10292b !default;
+$cards: #328787 !default;
+$content: #13434a !default;
+$secondary: #28acad  !default;
+$footer-c: #10292b !default;
+$footer-t: #fff !default;
+$color-tertiary: #b1e1df !default;
+$color-ctext: #ffffff !default;
+$paragraph-color: $color-ctext;
+$color-fourth: #1a3334 !default;
+$link-b: #24c0c0 !default;
+$light: #f5f6f4;
+$gbmix: mix($main, $color-tertiary, 30%);
+$gbmix2: mix($color-fourth, $light, 80%);
+$gbmix3: mix($footer-t, $color-fourth, 10%);
+$headingsmix: mix($color-ctext, $secondary, 90%);
+$theme-border-radius: 0 !default;
+$gradient: linear-gradient(90deg, $main 0%, $secondary 100%);
+
+/* Lisätyylittelyt */
+$ease: 1s ease;
+$link-borderb: 5px solid;
+$ts: 2px -1px $color-fourth;
+$bs: 2px 2px 2px rgba(0,0,0,0.13); /* perus box shadow */
+$bs2: 1px 1px 0px $color-fourth; /* värikäs box shadow *#8e3389 */
+$scale: scale(1.05); /* yleinen transition */
+
+/* Fonttisäädöt */
+$base-f: 'Roboto Mono', sans-serif;
+$base-fh: 'Space Mono', sans-serif;
+$font-lg: 3em;
+$font-md: 2em;
+$font-sub: 1.8em;
+$font-sm: 16px !default;
+$theme-text-size: 16px !default;
+$base-w: 400;
+$bold-w: 800;
+
+/* Korkeus- ja leveysmaksimit */
+$nav-h: 110px;
+$m-w: 970px;
+$max-width-img: 600px;
+$auto: 0 auto;
+
+/* Olen laiska, entä sitten? */
+$h: hidden;
+$n: none;

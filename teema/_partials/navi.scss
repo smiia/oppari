@@ -1,0 +1,122 @@
+.site-header {
+        background: $header;
+        z-index: 10;
+        position: relative;
+      }
+
+.site-branding, .site-navigation, #primary-menu {
+        a, p, ul li, ul li a {
+        color: $headers !important;}
+
+        p.site-title a {
+                margin: 0 10px;
+        }
+}
+
+
+    #site-navigation {
+            display: inline-block;
+            position: relative;
+            flex-direction: row;
+      .menu-toggle {
+              display: none;
+      }
+
+      ul li {
+              display: inline-block;
+      }
+
+      .menu-item {padding: 10px 10px 10px 80px; font-size: 1.5 * $font-sm;}
+
+    }
+
+
+    .main-navigation .current-menu-item > a,
+    .main-navigation .current_page_item > a {
+            border-bottom: 2px solid;
+    }
+    #site-navigation .menu-item {
+        border-bottom: 4px $color-fourth;
+      }
+
+#masthead {
+        min-height: 110px;
+        width: 100%;
+        display: flex;
+        top: 0;
+        left: 0;
+        
+        img {
+                width: 100%;
+                height: auto;
+        }
+
+a {
+        transition: 0.7s color;
+        text-transform: lowercase;
+
+
+        &:hover {transform: scale(1.05);
+                transition: 0.3s ease-in-out;
+                color: $link-b !important;
+}}
+
+           .site-description {
+                   display: none;
+           }
+
+           .site-title a {
+font-size: 1.6em !important;
+text-transform: none !important;
+           }
+
+    .custom-logo {
+      height: 90px;
+      width: auto;
+float: left;
+
+&-link {
+        align-self: center;
+}}
+
+      .site-branding {
+              
+              margin-top: 10px;
+              position: relative;
+              display: flex;
+
+      }
+      .site-branding {
+              display: inline-flex;
+      }
+      
+      img {
+              width: 100%;
+              height: auto;
+      }
+      .wrapper-header {
+              width: $m-w;
+              padding: 40px;
+              display: flex;
+              position: relative;
+              max-height: 130px;
+
+              @media (max-width: 560px) {
+                      padding: 15px !important;
+                      margin-left: 0 !important;
+              }
+      }
+      .site-header-main {
+              display: flex;
+              flex-basis: 100%;
+              width: 100%;
+                      position: relative;
+      }
+      
+      .main-navigation {
+              width: inherit;
+      align-items: flex-end !important;
+              justify-content: flex-end !important;
+              align-self: center;
+      display: flex !important;
+      }}
