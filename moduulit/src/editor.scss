@@ -1,0 +1,150 @@
+ .block-editor__container img {
+     height: 100%;
+ }
+ .wp-block-moduulit-moduuli > .block-editor-inner-blocks > .block-editor-block-list__layout [data-type="moduulit/kontenttimoduuli"] {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f0f0f085;
+
+    .kuva-kontent {
+        height: 100%;
+    }
+     .kontenttiwrap {
+        width: 100%;
+        flex-basis: 100%;
+        background-color: grey;
+        display: inline-flex;
+        flex-direction: column !important;
+        padding: 16px;
+        font-size: 14px;
+    
+     h1, h2 {
+        font-family: "Space Mono", sans-serif;
+     }}
+
+        .block-editor-media-placeholder {
+            width: 50%;
+            min-width: 300px;
+        }
+ }
+ .wp-block-moduulit-moduuli {
+     display: block;
+     min-height: 30px;
+     border: 2px dashed #000;
+     @for $i from 1 through 4 {
+        &.has-#{$i}-columns {
+            > .block-editor-inner-blocks > .block-editor-block-list__layout > {
+                [data-type="moduulit/korttimoduuli"] {
+                width: calc(100% / #{$i} - #{$i} * 5px);
+                margin: 0 auto;
+            }}}
+     }
+    > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: flex;
+    margin: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    [data-type="moduulit/somerow"] {
+        ul { 
+            list-style: none;
+            padding: 0;
+        margin: 10px -5px 0;}
+            li {
+                display: inline-block;
+                margin: 3px;
+
+                span.dashicon {
+                    color: #e4e4e4;
+                }
+                &.is-selected {
+                    outline: 2px solid rgb(128, 0, 182);
+                }
+                button {
+                    background: none;
+                    border: none;
+                    align-self: space-around;
+                    padding: 0;
+                    cursor: pointer;
+                    margin: 0;
+                }
+
+                &.wp-block-moduuli-somerow-add-more {
+                    button {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        cursor: pointer;
+                        margin: 0;
+                        outline: 1px dashed;
+                    }
+                }
+            }
+    }
+    [data-type="moduulit/korttimoduuli"] {
+        max-width: none;
+        background-color: lightgrey;
+        margin: 0;
+        img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 250px;
+        }
+    }
+
+    > [data-type="moduulit/korttimoduuli"] {
+        margin: 0;
+
+        .cardwrap {
+            display: flex;
+            padding: 10px;
+            height: 100%;
+            flex-direction: column;
+        .textwrap {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                height: inherit !important;
+            }
+        }
+            h5 {
+                font-weight: 600;
+                margin: 0;
+                font-size: 22px;}
+    
+        .cardb {
+            width: 50%;
+            padding: 9px 0 0;
+            margin-bottom: 10px;
+            height: 40px;
+            background-color: #888;
+            transition: 0.3s ease;
+            font-weight: 500 !important;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;}
+        }
+        .wp-block-moduulit-moduulikortti-kuva {
+            position: relative;
+
+            &.is-loading img {
+                opacity: 0.45;
+            }
+            .components-spinner {
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+}
+
+.block-editor-block-list__block .block-list-appender.block-list-appender, .block-editor-button-block-appender, .block-editor-block-list__block .block-list-appender .block-editor-inserter__toggle.components-button.has-icon, .block-editor-block-list__block .block-list-appender .block-list-appender__toggle{
+    width: 100px;
+margin: 0 auto;}
